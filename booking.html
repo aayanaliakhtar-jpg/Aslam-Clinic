@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment | Aslam Homoeo Clinic</title>
+  <meta name="description" content="Book a consultation with Dr Raja Akhtar Mehmood at Aslam Homoeo Clinic in Banian, Kharian, Gujrat.">
+  <meta name="keywords" content="Dr Raja Akhtar Mehmood homeopathy, Homeopathic clinic Kharian, Best homeopathic doctor Banian">
+  <meta name="google-analytics-placeholder" content="G-XXXXXXXXXX">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="navbar container" aria-label="Main navigation"><a class="brand" href="index.html"><span class="brand-mark"><i class="ph ph-leaf"></i></span><span><strong>Aslam Homoeo Clinic</strong><small>Natural Healing. Lasting Results.</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu"><i class="ph ph-list"></i></button><div class="nav-links" id="primary-menu"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="blog.html">Health Tips</a><a href="contact.html">Contact</a><a class="nav-cta active" href="booking.html">Book Now</a></div></nav></header>
+  <main id="main">
+    <section class="page-hero booking-hero"><div class="container narrow"><span class="eyebrow">Appointment</span><h1>Book your consultation with Dr. Mehmood.</h1><p>Share your basic details and preferred timing. The clinic will confirm availability by phone or WhatsApp.</p></div></section>
+    <section class="section">
+      <div class="container booking-grid">
+        <form class="form-card validated-form booking-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-provider-placeholder="formspree" novalidate>
+          <h2>Appointment request</h2>
+          <div class="form-row"><label>Name<input name="name" type="text" autocomplete="name" required placeholder="Your full name"></label><label>Phone<input name="phone" type="tel" autocomplete="tel" required placeholder="+92 300 0000000"></label></div>
+          <div class="form-row"><label>Age<input name="age" type="number" min="1" max="110" required placeholder="Age"></label><label>Gender<select name="gender" required><option value="">Select</option><option>Female</option><option>Male</option><option>Prefer to discuss</option></select></label></div>
+          <label>Chief Complaint / Disease<textarea name="complaint" rows="5" required placeholder="Briefly describe your symptoms or diagnosis"></textarea></label>
+          <div class="form-row"><label>Preferred Date<input name="date" type="date" required></label><label>Preferred Time<input name="time" type="time" required></label></div>
+          <button class="btn btn-primary" type="submit">Request Appointment</button>
+          <p class="form-status" role="status"></p>
+        </form>
+        <aside class="booking-aside">
+          <h2>Prefer WhatsApp?</h2>
+          <p>Send your name, age, complaint, and preferred time directly to the clinic.</p>
+          <a class="btn btn-secondary" href="https://wa.me/923000000000?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20book%20an%20appointment.%0AName%3A%0AAge%3A%0AComplaint%3A%0APreferred%20time%3A"><i class="ph ph-whatsapp-logo"></i> Book on WhatsApp</a>
+          <div class="doctor-note"><i class="ph ph-user-circle-check"></i><p>Dr. Mehmood personally reviews every case before guiding the treatment plan.</p></div>
+          <div class="doctor-note"><i class="ph ph-file-text"></i><p>Please bring ultrasound, lab reports, and previous prescriptions if available.</p></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div><h2>Aslam Homoeo Clinic</h2><p>Village & PO Banian, Tehsil Kharian, District Gujrat, Pakistan.</p></div><div><h3>Contact</h3><p><a href="tel:+923000000000">+92 300 0000000</a></p><p><a href="https://wa.me/923000000000">WhatsApp Chat</a></p></div><div><h3>Hours</h3><p>Morning and evening timing placeholders to be updated.</p></div><div class="footer-map"><iframe title="Map to Aslam Homoeo Clinic Banian" loading="lazy" src="https://www.google.com/maps?q=Banian%20Kharian%20Gujrat%20Pakistan&output=embed"></iframe></div></div><div class="footer-bottom container">© <span id="year"></span> Aslam Homoeo Clinic. All rights reserved.</div></footer>
+  <a class="whatsapp-float" href="https://wa.me/923000000000?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20book%20a%20consultation%20at%20Aslam%20Homoeo%20Clinic." aria-label="Chat on WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+  <button class="scroll-top" type="button" aria-label="Scroll to top"><i class="ph ph-arrow-up"></i></button>
+  <script src="script.js"></script>
+</body>
+</html>
