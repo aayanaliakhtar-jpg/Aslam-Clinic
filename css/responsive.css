@@ -1,0 +1,169 @@
+@media (max-width: 1024px) {
+  .card-grid,
+  .values-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat-grid,
+  .journey {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .journey-step::after {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .split,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-frame {
+    max-width: 620px;
+  }
+
+  .testimonials,
+  .condition-grid,
+  .comparison {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-wrap {
+    min-height: 68px;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .js .primary-nav {
+    position: fixed;
+    inset: 68px 0 auto 0;
+    display: grid;
+    max-height: calc(100vh - 68px);
+    padding: 1rem;
+    background: var(--linen);
+    border-bottom: 1px solid rgba(74, 124, 89, 0.2);
+    box-shadow: var(--shadow);
+    transform: translateY(-120%);
+    transition: transform 220ms ease;
+    overflow-y: auto;
+  }
+
+  .js .primary-nav.is-open {
+    transform: translateY(0);
+  }
+
+  .primary-nav {
+    display: grid;
+    width: 100%;
+  }
+
+  .primary-nav a {
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.8rem 1rem;
+  }
+
+  .hero {
+    min-height: 620px;
+  }
+
+  .hero::before {
+    background:
+      linear-gradient(180deg, rgba(248, 245, 240, 0.98) 0%, rgba(248, 245, 240, 0.88) 60%, rgba(248, 245, 240, 0.68) 100%),
+      image-set(url("../assets/images/morning-leaves-banain-kharian.webp") type("image/webp"), url("../assets/images/morning-leaves-banain-kharian.jpg") type("image/jpeg"));
+    background-position: center;
+  }
+
+  .cta-row {
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .footer-grid {
+    gap: 1.35rem;
+  }
+
+  .floating-whatsapp {
+    width: 54px;
+    height: 54px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stat-grid,
+  .card-grid,
+  .values-grid,
+  .journey {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-row {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .brand-urdu {
+    font-size: 0.72rem;
+  }
+
+  .brand-mark {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container,
+  .narrow,
+  .nav-wrap {
+    width: min(100% - 1rem, var(--max));
+  }
+
+  .section {
+    padding-block: 2.6rem;
+  }
+
+  .hero {
+    min-height: 590px;
+  }
+
+  .service-card,
+  .value-card,
+  .testimonial-card,
+  .condition-card,
+  .appointment-form,
+  .callout {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 2.15rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  .brand {
+    gap: 0.55rem;
+  }
+
+  .brand-name {
+    max-width: 180px;
+  }
+}
